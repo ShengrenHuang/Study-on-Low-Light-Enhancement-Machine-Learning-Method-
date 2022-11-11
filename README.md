@@ -1,12 +1,6 @@
 # Study-on-Low-Light-Enhancement-Machine-Learning-Method-
 
-In 
-
-在本 repository 中，我們探討利用data driven based machine learning 方法 來實現低光源增強演算法。我們的主要的演算步驟是利用 dehazing 演算法 來將低光源的負片影像做去haze，接著再做一次負片來得到增加曝光的影像。 值得一提的是，大部分deep learning 的 dehazing 演算法 只能針對 homogeneous dehazing problem 做處理。而在 [?]中，作者透過two-branch neural network 來實現ensemble learning。此種方式可以應付 nonhomogeneous dehazing problem，使得dehazing 的性能可以提升。我們將此演算法與負片做結合，可以得到低光源增強效果。結果顯示非常好。 
-
-
-在此，我們利用 dehazing 演算法 [3] 來將負片中黑色部分
-
+In this repository, we investigate the data-driven method (machine learning) for implementing low-light image enhancement. We first employ a dehazing algorithm [1][2] to remove haze in the inverted image. We then invert the image once again to gain the image with regular exposure. Notably, many deep learning methods merely handle homogeneous dehazing problems. In [1], the authors adopt a two-branch neural network to realize ***ensemble learning***, which can engage nonhomogeneous dehazing issues. Hence, the performance of dehazing is improved. We utilize [1] and invert low-light images to enhance the low-light image. The result below shows the algorithm is valid. 
 
 
 ![33](https://user-images.githubusercontent.com/108604868/201390433-c129e7df-601c-41a0-84c6-81f518ab626b.jpg)
